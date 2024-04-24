@@ -1,0 +1,61 @@
+.bannerSection {
+  padding: 25px 0px;
+}
+
+.bannerSection .box {
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: center; /* Centers the content of '.box' */
+}
+
+.bannerSection .box:hover img {
+  transform: scale(1.1);
+}
+
+.responsive-banner1, .responsive-banner2 {
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.responsive-banner1 {
+  background-image: linear-gradient(to bottom right, #7E3FFF, #7E3FFF);
+}
+
+.responsive-banner2 {
+  background-image: linear-gradient(to bottom right, #5BD6FF, #5BD6FF);
+}
+
+.special-paragraph {
+  color: white;
+  font-size:30px;
+  font-weight: bold;
+  font-family: 'Math Sans Bold', sans-serif;
+}
+
+.icon-img {
+  width: auto; /* Adjust width as necessary */
+  max-height: 120px; /* Example max-height for the icon images */
+  margin: 0 auto; /* Centers the image horizontally */
+  display: block; /* Makes the image a block-level element to apply margin */
+}
+
+.container-envelope1 {
+  padding: 15px;
+  padding-left: 186px;  /* Increase left padding to move content right */
+  color: #fff;
+  display: flex;
+  flex-direction: column; /* Stacks the image and paragraph vertically */
+  justify-content: center; /* Centers the contents vertically */
+  align-items: center; /* Centers the contents horizontally */
+  min-height: 320px;
+  max-height: 450px;
+}
+
+@media (min-width: 650px) {
+  .container-envelope1 {
+      max-width: calc(100% - 200px);
+  }
+}
