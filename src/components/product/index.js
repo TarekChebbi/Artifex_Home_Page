@@ -62,11 +62,7 @@ const Product = (props) => {
                                             <FavoriteBorderOutlinedIcon />
                                         </a>
                                     </li>
-                                    <li className='list-inline-item'>
-                                        <a className='cursor' tooltip="Compare">
-                                            <CompareArrowsOutlinedIcon />
-                                        </a>
-                                    </li>
+                                  
                                     <li className='list-inline-item'>
                                         <a className='cursor' tooltip="Quick View">
                                             <RemoveRedEyeOutlinedIcon />
