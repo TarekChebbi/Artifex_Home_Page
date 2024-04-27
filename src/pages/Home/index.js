@@ -9,6 +9,7 @@ import Stars2 from '../../components/imagestars2'
 import Stars3 from '../../components/imagestars3'
 import Collbanner from '../../components/CollectionBanner'
 import Collbanner2 from '../../components/CollectionBanner2'
+
 import Viewmore from '../../components/ViewMore'
 import Faqs from '../../components/Faqs'
 import Shq from '../../components/ContactUsSection'
@@ -134,6 +135,7 @@ const Home = (props) => {
             <br />
             <br />
             <SliderBanner2 />
+           
             
             
 

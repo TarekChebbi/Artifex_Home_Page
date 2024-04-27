@@ -43,6 +43,7 @@ const data = {
                 "description": "Tarek Life Whole Moong is one of the light meal to digest. It is often given to people who prefer diet for fitness. It contains antioxidants which are very healthy for the good functioning of the human body. It can be included in our daily diet as it can fulfil the nutritional and dietary requirements of an entire meal. Buy Good Life Whole Moong online now!",
                 "id": 1
               },
+              
               {
                 "productName": "Forest",
                 "price": "246",
