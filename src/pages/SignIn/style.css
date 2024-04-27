@@ -13,9 +13,10 @@
   }
   
   .art-signin-header {
-    font-size: 24px; /* Adjust font size as needed */
+    font-size: 28px; /* Adjust font size as needed */
   color: #333;
   margin-bottom: 30px;
+  font-weight: bold;
   display: flex;
   align-items: center;
   position: relative;
@@ -68,33 +69,33 @@
   }
   
   .art-signin-next {
-    background-color: #007bff;
+    background-color: #5BD6FF;
     color: white;
     border: none;
   }
   
   .art-signin-next:hover {
-    background-color: #0056b3;
+    background-color: #96e3fd;
   }
   
   .art-signin-prev {
-    background-color: transparent;
-    color: #007bff;
-    border: 2px solid #007bff;
+    background-color: #FF2987;
+    color: white;
+ border: none;
   }
   
   .art-signin-prev:hover {
-    background-color: #f0f0f0;
+    background-color: #FF81B8;
   }
   
   .art-signin-create {
-    background-color: #28a745;
+    background-color: #5BD6FF;
     color: white;
     border: none;
   }
   
   .art-signin-create:hover {
-    background-color: #218838;
+    background-color: #96e3fd;
   }
   
   @media (max-width: 768px) {
@@ -146,3 +147,42 @@
   .image-uploader:hover .image-uploader-text {
     color: #00A4FF;
   }
+
+
+  .art-dimension-group {
+    display: flex;
+    justify-content: space-between; /* Space out the input fields */
+    gap: 20px; /* Adjust gap size to increase space between inputs */
+    margin: 20px 0; /* Vertical spacing for the entire group */
+  }
+  
+  .art-dimension-input {
+    flex: 1; /* Allows each input to take equal width */
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
+    margin-right: 10px; /* Adds right margin to each input group */
+  }
+  
+  .art-dimension-input:last-child {
+    margin-right: 0; /* Removes right margin from the last input group */
+  }
+  
+  /* Other styles remain unchanged */
+  
+  @media (max-width: 768px) {
+    .art-dimension-group {
+      flex-direction: column;
+      gap: 0; /* Reset gap for vertical stacking on smaller screens */
+    }
+    
+    .art-dimension-input {
+      width: 100%; /* Full width on smaller screens */
+      margin-right: 0; /* Reset right margin for smaller screens */
+      margin-bottom: 15px; /* Increase space between stacked inputs */
+    }
+    
+    .art-dimension-input:last-child {
+      margin-bottom: 0; /* Removes bottom margin from the last input group */
+    }
+  }
+  

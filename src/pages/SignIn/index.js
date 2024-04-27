@@ -30,13 +30,19 @@ const AddArtworkForm = () => {
       {step === 1 && (
         <div className="art-signin-step">
           {/* Step 1: Artwork Details */}
+          <p style={{color:'black'}}>Title</p>
           <input type="text" placeholder="Artwork Title" />
+          <p style={{color:'black'}}>Price</p>
+          <input type="text" placeholder="Price" />
+          <p style={{color:'black'}}>Categorie</p>
           <select>
+            
+            <option value="Hand">Hand Drawing</option>
+            <option value="Digital">Digital Drawing</option>
             <option value="painting">Painting</option>
-            <option value="drawing">Drawing</option>
-            <option value="sculpture">Sculpture</option>
             {/* More categories as needed */}
           </select>
+          <p style={{color:'black'}}>Description</p>
           <textarea placeholder="Describe the artwork"></textarea>
           <label className="image-uploader">
       <input type="file" onChange={handleImageChange} style={{ display: 'none' }} />
@@ -57,10 +63,40 @@ const AddArtworkForm = () => {
       {step === 2 && (
         <div className="art-signin-step">
           {/* Step 2: Artwork Dimensions & Pricing */}
-          <input type="number" placeholder="Height in cm" />
-          <input type="number" placeholder="Width in cm" />
-          <input type="text" placeholder="Price in USD" />
-          <input type="number" placeholder="Year of creation" />
+          <p style={{color:'black'}}>Title</p>
+          <input type="text" placeholder="Artwork Title" />
+          <p style={{color:'black'}}>Price</p>
+          <input type="text" placeholder="Price" />
+          <p style={{color:'black'}}>Categorie</p>
+          <select>
+            
+            <option value="Hand">Hand Drawing</option>
+            <option value="Digital">Digital Drawing</option>
+            <option value="painting">Painting</option>
+            {/* More categories as needed */}
+          </select>
+          <div className="art-dimension-group">
+  <div className="art-dimension-input">
+    <label htmlFor="height" className="art-dimension-label">Height</label>
+    <input type="number" id="height" className="art-dimension" placeholder="4 m" />
+  </div>
+  
+  <div className="art-dimension-input">
+    <label htmlFor="width" className="art-dimension-label">Width</label>
+    <input type="number" id="width" className="art-dimension" placeholder="3 m" />
+  </div>
+
+  <div className="art-dimension-input">
+    <label htmlFor="year" className="art-dimension-label">Year</label>
+    <input type="number" id="year" className="art-dimension" placeholder="2024" />
+  </div>
+</div>
+<p style={{color:'black'}}>Description</p>
+          <textarea placeholder="Describe the artwork"></textarea>
+
+
+
+
           <label className="image-uploader">
       <input type="file" onChange={handleImageChange} style={{ display: 'none' }} />
       <div className="image-uploader-content">
@@ -78,9 +114,20 @@ const AddArtworkForm = () => {
       {step === 3 && (
         <div className="art-signin-step">
           {/* Step 3: Create Your Account */}
-          <input type="email" placeholder="Your email" />
-          <input type="password" placeholder="Choose a password" />
-          <input type="password" placeholder="Confirm your password" />
+          <p style={{color:'black'}}>Title</p>
+          <input type="text" placeholder="Artwork Title" />
+          <p style={{color:'black'}}>Price</p>
+          <input type="text" placeholder="Price" />
+          <p style={{color:'black'}}>Categorie</p>
+          <select>
+            
+            <option value="Hand">Hand Drawing</option>
+            <option value="Digital">Digital Drawing</option>
+            <option value="painting">Painting</option>
+            {/* More categories as needed */}
+          </select>
+          <p style={{color:'black'}}>Description</p>
+          <textarea placeholder="Describe the artwork"></textarea>
           <label className="image-uploader">
       <input type="file" onChange={handleImageChange} style={{ display: 'none' }} />
       <div className="image-uploader-content">
