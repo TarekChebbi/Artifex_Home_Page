@@ -1,5 +1,20 @@
 /* style.css */
-
+.art-form-background-wrapper {
+    position: relative;
+    padding-top: 50px; /* or the amount needed for your design */
+  }
+  
+  .art-form-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; /* Ensure it stays behind the form container */
+  }
 .art-signin-form-container {
     background: #FFFFFF;
     border-radius: 16px;

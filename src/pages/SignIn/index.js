@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './style.css'; // Ensure this path is correct for your CSS file
+import backgroundImage from '../../assets/images/Signupbackground2.png'; 
 
 const AddArtworkForm = () => {
   const [step, setStep] = useState(1);
@@ -24,6 +25,8 @@ const AddArtworkForm = () => {
   
 
   return (
+    <div className="art-form-background-wrapper">
+    <div className="art-form-background" style={{ backgroundImage: `url(${backgroundImage})` }}></div>
     <div className="art-signin-form-container">
       <div className="art-signin-header">Add Artwork</div>
 
@@ -142,6 +145,7 @@ const AddArtworkForm = () => {
         </div>
       )}
 
+    </div>
     </div>
   );
 };

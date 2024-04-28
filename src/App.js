@@ -149,7 +149,7 @@ function App() {
           isLoading===true && <div className='loader'><img src={Loader}/></div>
         }
 
-        <Header data={data.productData} />
+        <Header  />
         <Routes>
           <Route exact={true} path="/" element={<Home data={data.productData} />} />
           
