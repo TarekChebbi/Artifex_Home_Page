@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import NotFoundImg from '../../assets/images/page-404.png';
+import NotFoundImg from '../../assets/images/404.svg';
 import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 
@@ -18,7 +18,7 @@ const NotFound = () => {
 
 
                     <div className='d-flex'>
-                        <Button className='btn-g btn-lg m-auto'><Link to={'/'}>Back to Home Page</Link></Button>
+                        <Button className='btn-g btn-lg m-auto' style={{ backgroundcolor: 'red'}}><Link to={'/'}>Back to Home Page</Link></Button>
                     </div>
 
                 </div>

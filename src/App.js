@@ -12,7 +12,7 @@ import NotFound from './pages/NotFound';
 
 import axios from 'axios';
 
-import SignIn from './pages/SignIn';
+import AddArtwork from './pages/AddArtworkForm';
 
 
 import Loader from './assets/images/loadpurple.gif';
@@ -73,16 +73,7 @@ function App() {
     }
   }
 
-  const getCartData = async (url) => {
-    try {
-      await axios.get(url).then((response) => {
-        setCartItems(response.data);
-      })
 
-    } catch (error) {
-      console.log(error.message);
-    }
-  }
 
   const addToCart = async (item) => {
     item.quantity = 1;
@@ -154,7 +145,7 @@ function App() {
           <Route exact={true} path="/" element={<Home data={data.productData} />} />
           
       
-          <Route exact={true} path="/signIn" element={<SignIn />} />
+          <Route exact={true} path="/addartwork" element={<AddArtwork />} />
           
           
           <Route exact={true} path="*" element={<NotFound />} />
@@ -162,6 +153,8 @@ function App() {
        <Footer/>
       </MyContext.Provider>
     </BrowserRouter>
+
+    
   );
 }
 
