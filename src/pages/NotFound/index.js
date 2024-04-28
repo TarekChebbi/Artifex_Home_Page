@@ -18,7 +18,7 @@ const NotFound = () => {
 
 
                     <div className='d-flex'>
-                        <Button className='btn-g btn-lg m-auto' style={{ backgroundcolor: 'red'}}><Link to={'/'}>Back to Home Page</Link></Button>
+                        <Button className='btn-g btn-lg m-auto' ><Link to={'/'}>Back to Home Page</Link></Button>
                     </div>
 
                 </div>
