@@ -9,7 +9,7 @@ import Footer from './components/footer/footer';
 import Home from './pages/Home/index';
 import About from './pages/About/index';
 import NotFound from './pages/NotFound';
-
+import HomePage from './pages/HomePage';
 import axios from 'axios';
 
 import AddArtwork from './pages/AddArtworkForm';
@@ -146,15 +146,13 @@ function App() {
           
       
           <Route exact={true} path="/addartwork" element={<AddArtwork />} />
-          
+          <Route exact={true} path="/homepage" element={<HomePage />} />
           
           <Route exact={true} path="*" element={<NotFound />} />
         </Routes>
        <Footer/>
       </MyContext.Provider>
-    </BrowserRouter>
-
-    
+    </BrowserRouter>    
   );
 }
 
