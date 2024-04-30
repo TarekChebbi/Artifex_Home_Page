@@ -14,13 +14,6 @@ const Nav = (props) => {
 
     const [navData, setNavData] = useState([]);
     const [isOpenNav, setIsOpenNav] = useState(false);
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    const [openDropdownMenu, setDropdownMenu] = useState(false);
-    const [openDropdownMenuIndex, setDropdownMenuIndex] = useState(null);
-
-    const [openMegaMenu, setOpenMegaMenu] = useState(false);
-
-    const context = useContext(MyContext);
 
     useEffect(() => {
         setNavData(props.data);
@@ -31,14 +24,8 @@ const Nav = (props) => {
     }, [props.openNav])
 
 
-    const closeNav=()=>{
-        props.closeNav();
-    }
 
-    const openDropdownFun=(index)=>{
-        setDropdownMenu(!openDropdownMenu)
-        setDropdownMenuIndex(index)
-    }
+
 
     return (
         <>

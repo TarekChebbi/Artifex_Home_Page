@@ -1,54 +1,31 @@
-import React, { useState, useEffect, useRef, useContext } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import SliderBanner from './slider/index';
 import SliderBanner2 from './slider2/index';
-import CatSlider from '../../components/catSlider';
-
 import Banners from '../../components/banners';
 import Stars from '../../components/imagestars'
 import Stars2 from '../../components/imagestars2'
 import Stars3 from '../../components/imagestars3'
 import Collbanner from '../../components/CollectionBanner'
 import Collbanner2 from '../../components/CollectionBanner2'
-
 import Viewmore from '../../components/ViewMore'
 import Faqs from '../../components/Faqs'
 import Shq from '../../components/ContactUsSection'
 import Servsec from '../../components/ServicesSection'
-import Teambehind from '../../components/TeamBehind'
-
-
-import './style.css';
+import Teambehind from '../../components/TeamBehind';
 import Product from '../../components/product';
-import Banner4 from '../../assets/images/banner4.jpg';
-
-import Slider from "react-slick";
-
-import axios from 'axios';
-import { MyContext } from '../../App';
+import './style.css';
 
 const Home = (props) => {
 
-    const [prodData, setprodData] = useState(props.data)
-    const [catArray, setcatArray] = useState([])
+    const prodData=props.data;
+    const [catArray, setcatArray] = useState([]);
     const [activeTab, setactiveTab] = useState();
-    const [activeTabIndex, setactiveTabIndex] = useState(0);
     const [activeTabData, setActiveTabData] = useState([]);
 
     const [bestSells, setBestSells] = useState([]);
     const [isLoadingProducts, setIsLoadingProducts] = useState(false);
 
     const productRow=useRef();
-    const context = useContext(MyContext);
-
-    var settings = {
-        dots: false,
-        infinite: context.windowWidth<992 ? false : true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        fade: false,
-        arrows: context.windowWidth<992 ? false : true,
-    };
 
     const catArr = [];
 
